@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial 4 | 8</title>
+    <!-- JQUERY CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+</head>
+<body style="text-align: center;">
+    <div style="height: 200px; width: 200px; background-color: blue;"></div>
+    <button>Click Me For Animation!</button>
+
+    <script>
+    $(document).ready(()=>{
+        $("button").click(()=>{
+            $("div").animate({
+                width: '500px',
+                height: '500px'
+            }, 3000);
+            setTimeout(function() {
+                $("div").css({"background-color":"orange"});
+            }, 3000);
+            $("div").animate({
+                width: '50px',
+            }, 3000);
+            setTimeout(function() {
+                $("div").css({"background-color":"red"});
+            }, 6000);
+            $("div").animate({
+                height: '50px'
+            }, 3000);
+            setTimeout(function() {
+                $("div").css({"background-color":"green"});
+            }, 9000);
+            $("div").animate({
+                width: '200px',
+                height: '200px'
+            }, 3000);
+            setTimeout(function() {
+                $("div").css({"background-color":"blue"});
+            }, 12000);
+        });
+    });
+    </script>
+
+</body>
+</html>

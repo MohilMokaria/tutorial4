@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial 4 | 9</title>
+    <!-- JQUERY CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+</head>
+<body style="text-align: center; background-color: teal;">
+    <div style="height: 300px;">
+        <img src="im.jpg" alt="Image Loading..." height="100%">
+    </div>
+    <br>
+    <button class="hide">Click to Hide Image!</button>
+    <button class="show">Click to Show Image!</button>
+
+    <script>
+    $(document).ready(()=>{
+        $(".hide").click(()=>{
+            $("img").hide();
+        });
+        $(".show").click(()=>{
+            $("img").show();
+        });
+    });
+    </script>
+
+</body>
+</html>

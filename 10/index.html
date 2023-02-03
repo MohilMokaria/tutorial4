@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial 4 | 9</title>
+    <!-- JQUERY CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+
+    <style>
+        td{
+            padding: 0 30px;
+        }
+    </style>
+</head>
+<body style="text-align: center; background-color: teal;">
+    <center>
+        <table>
+            <tr>
+                <td>
+                    <div>
+                        <div style="height: 300px;">
+                            <img class="img1" src="im.jpg" alt="Image Loading..." height="100%">
+                        </div>
+                        <br>
+                        <button class="one">Fade In</button>
+                        <button class="two">Fade Out</button>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <div style="height: 300px;">
+                            <img class="img2" src="im.jpg" alt="Image Loading..." height="100%">
+                        </div>
+                        <br>
+                        <button class="three">Fade Toggle</button>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <div style="height: 300px;">
+                            <img class="img3" src="im.jpg" alt="Image Loading..." height="100%">
+                        </div>
+                        <br>
+                        <button class="four">Fade to 0.3</button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </center>
+
+    <script>
+    $(document).ready(()=>{
+
+        $(".one").click(function(){
+            $(".img1").fadeIn();
+        });
+
+        $(".two").click(function(){
+            $(".img1").fadeOut();
+        });
+
+        $(".three").click(function(){
+            $(".img2").fadeToggle();
+        });
+
+        $(".four").click(function(){
+            $(".img3").fadeTo("slow", 0.3);
+        });
+    });
+    </script>
+
+</body>
+</html>

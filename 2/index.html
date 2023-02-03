@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial 4 | 2</title>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <input type="checkbox" name="c-box"><label for="c-box">Click Me</label>
+    <br>
+    <input class="btn" type="button" value="Button" disabled>
+    <script>
+
+$('input[type=checkbox]').change(
+    function(){
+        if (this.checked) {
+            $('.btn').attr('disabled', false);
+        }else{
+            $('.btn').attr('disabled', true)
+        }
+    });
+    </script>
+</body>
+</html>
